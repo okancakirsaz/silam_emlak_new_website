@@ -2,10 +2,11 @@ import "./app_bar.css";
 import { AppBarScrollListener } from "./app_bar_scroll_listener";
 export class AppBar{
     constructor(){
+        this.buildMenu();
         this.build();
         new AppBarScrollListener();
     }
-
+    menuDisplay="none";
 
     build(){
     const logoImage = document.getElementById("logoImage").src;
@@ -35,7 +36,20 @@ export class AppBar{
     const menu = document.createElement("img");
     menu.id="hamburger-menu";
     menu.src=menuImage;
-
+    
+    menu.addEventListener("click",(event)=>{
+        event.preventDefault();
+        const menuElement = document.getElementById("menu");
+        if(this.menuDisplay=="flex"){
+            this.menuDisplay="none";         
+        }
+        else{
+            menuElement.style.animation="menuOpenAnimation 2s linear forward";
+            console.log(menuElement.style.animation)
+            this.menuDisplay="flex";   
+        }
+        menuElement.style.display=this.menuDisplay;  
+    });
 
     rightElements.appendChild(location);
     rightElements.appendChild(parcel);
@@ -48,6 +62,71 @@ export class AppBar{
     mainContainer.appendChild(rightElements);
 
     document.body.insertBefore(mainContainer,document.body.firstChild);
-
     }
+
+   buildMenu(){
+    const parent = document.createElement("div");
+    parent.id="menu";
+
+    const popButton = document.createElement("img");
+    popButton.id="popButton";
+    popButton.src="https://www.svgrepo.com/show/247769/left-arrow-back.svg";
+    popButton.addEventListener("click",(e)=>{
+        this.menuDisplay="none";
+        parent.style.display=this.menuDisplay;
+    });
+
+    const title = document.createElement("div");
+    title.id="menuTitle";
+    title.innerHTML="MENU";
+
+    const popUpAndTitleSheet = document.createElement("div");
+    popUpAndTitleSheet.id="popUpAndTitleSheet";
+    parent.style.display=this.menuDisplay;
+    popUpAndTitleSheet.appendChild(popButton);
+    popUpAndTitleSheet.appendChild(title);
+
+    const ourLocation = document.createElement("a");
+    ourLocation.classList.add("menuElement");
+    ourLocation.innerHTML="Konumumuz";
+
+    const parcel = document.createElement("a");
+    parcel.classList.add("menuElement");
+    parcel.innerHTML="Ada Parsel Sorgulama";
+    parcel.href="https://parselsorgu.tkgm.gov.tr/";
+    parcel.target="_blank";
+
+    const consulment = document.createElement("a");
+    consulment.classList.add("menuElement");
+    consulment.innerHTML="Gayrimenkul Danışmanlık";
+
+    const aboutUs = document.createElement("a");
+    aboutUs.classList.add("menuElement");
+    aboutUs.innerHTML="Hakkımızda";
+
+    const contact = document.createElement("a");
+    contact.classList.add("menuElement");
+    contact.innerHTML="İletişim";
+    contact.href="/iletisim.html";
+
+    const calculator = document.createElement("a");
+    calculator.classList.add("menuElement");
+    calculator.innerHTML="Mülk Değeri Hesaplama";
+
+    const articles = document.createElement("a");
+    articles.classList.add("menuElement");
+    articles.innerHTML="İlanlar";
+    
+    parent.appendChild(popUpAndTitleSheet);
+    parent.appendChild(ourLocation);
+    parent.appendChild(parcel);
+    parent.appendChild(consulment);
+    parent.appendChild(aboutUs);
+    parent.appendChild(contact);
+    parent.appendChild(calculator);
+    parent.appendChild(articles);
+
+    document.body.insertBefore(parent,document.body.firstChild);
+
+   }
 }

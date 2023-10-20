@@ -8,6 +8,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath:"/",
     filename: '[name]-bundle.js',
   },
   devtool: 'inline-source-map',
@@ -29,11 +30,16 @@ module.exports = {
       static: path.resolve(__dirname, 'dist'),
       port: 3000,
       hot: true,
+      historyApiFallback: true
     },
   plugins: [
      new HtmlWebpackPlugin({
-       template:"./src/views/main_page/main_page.html",
+       template:"./src/views/main_page/main_page.html"
      }),
+     new HtmlWebpackPlugin({
+      filename:"/iletisim.html",
+      template:"./src/views/contact/contact.html"
+    }),
     
     new NodePolyfillPlugin()
   ]

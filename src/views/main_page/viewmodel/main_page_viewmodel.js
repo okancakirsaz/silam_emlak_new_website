@@ -1,12 +1,12 @@
-import { ArticleMockServices } from "../../../core/services/mock_services/articles_mock_services";
 import { ArticleWidget } from "../../../core/widgets/article_widget/article_widget";
-
+import { MainPageServices } from "../services/main_page_services.js";
 export class MainPageViewModel{
-    articleService = new ArticleMockServices();
+    service = new MainPageServices() ;
 
-    fetchArticles(){
-        const response= this.articleService.getAllArticles();
-        for(let i=0;i<=response.length-1;i++){
+    async fetchArticles(){
+        const response= await this.service.getArticles();
+        localStorage.setItem("articles",JSON.stringify(response));
+        for(let i=0;i<=9;i++){
             new ArticleWidget(response[i],"articlesBody");
         }
     }

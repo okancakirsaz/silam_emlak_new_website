@@ -4,7 +4,7 @@ import { BottomBar } from '../../core/widgets/bottom_bar/bottom_bar';
 try{
 new AppBar();
 const viewModel=new MainPageViewModel();
-viewModel.fetchArticles();
+await viewModel.fetchArticles();
 viewModel.rotateHouses();
 new BottomBar();
 }
