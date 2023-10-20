@@ -1,0 +1,215 @@
+@import url(../../../core/consts/style_conts.css);
+  
+
+@media only screen and (min-width: 1024px){
+#property-consulment{
+    width: calc(100% - 20px);
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#house-in-your-dream{
+padding: 10px;
+border-radius:5px 5px 0px 0px ;
+background-color: #fad337;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+#houses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.house{
+    transform: rotate3d(0, 1, 0, 0deg);
+    margin-top: 40px;
+    width: 550px;
+    height: 550px;
+}
+
+#make-your-invesment{
+    flex-direction: column;
+    padding-top: 10px;
+    background-color: #ce3d1d;
+}
+
+.invesmentImage{
+   margin-left: calc(50% - 150px);
+   margin-top: 40px;
+   margin-bottom: 40px;
+   object-fit: cover;
+   text-align: center;
+   vertical-align: middle;
+   width: 300px;
+   position: relative;
+  
+}
+
+#sell-your-property{
+   padding-top: 10px;
+   height: 550px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #f05117;
+}
+
+.propertyImage{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 400px;
+}
+#contact-us-button{
+    text-align: center;
+    color: white;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+    #property-consulment{
+        width:100%;
+        border-radius: 5px;
+    }
+    
+    #house-in-your-dream{
+    padding: 10px;
+    border-radius:5px 5px 0px 0px ;
+    background-color: #fad337;
+    
+    }
+    
+    .title{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #houses{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .house{
+        transform: rotate3d(0, 1, 0, 0deg);
+        margin-top: 40px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    #make-your-invesment{
+        flex-direction: column;
+        padding-top: 10px;
+        background-color: #ce3d1d;
+    }
+    
+    .invesmentImage{
+       margin-left: calc(50% - 100px);
+       margin-top: 40px;
+       margin-bottom: 40px;
+       object-fit: cover;
+       text-align: center;
+       vertical-align: middle;
+       width: 200px;
+       position: relative;
+      
+    }
+    
+    #sell-your-property{
+       padding-top: 10px;
+       height: 400px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       background-color: #f05117;
+    }
+    
+    .propertyImage{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 200px;
+        height: 200px;
+    }
+    #contact-us-button{
+        text-align: center;
+        color: white;
+    } 
+}
+
+@media only screen and (min-width: 765px) and (max-width:1023px){
+    #property-consulment{
+        margin: 10px;
+        width:calc(100% - 20px);
+        border-radius: 5px;
+    }
+    
+    #house-in-your-dream{
+    padding: 10px;
+    border-radius:5px 5px 0px 0px ;
+    background-color: #fad337;
+    
+    }
+    
+    .title{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #houses{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .house{
+        transform: rotate3d(0, 1, 0, 0deg);
+        margin-top: 40px;
+        width: 320px;
+        height: 320px;
+    }
+    
+    #make-your-invesment{
+        flex-direction: column;
+        padding-top: 10px;
+        background-color: #ce3d1d;
+    }
+    
+    .invesmentImage{
+       margin-left: calc(50% - 100px);
+       margin-top: 40px;
+       margin-bottom: 40px;
+       object-fit: cover;
+       text-align: center;
+       vertical-align: middle;
+       width: 200px;
+       position: relative;
+      
+    }
+    
+    #sell-your-property{
+       padding-top: 10px;
+       height: 350px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       background-color: #f05117;
+    }
+    
+    .propertyImage{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 200px;
+        height: 200px;
+    }
+    #contact-us-button{
+        text-align: center;
+        color: white;
+    }
+}

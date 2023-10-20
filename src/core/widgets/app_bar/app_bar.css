@@ -1,0 +1,150 @@
+@import url(../../../core/consts/style_conts.css);
+
+
+@media only screen and (min-width: 1088px){
+ #app-bar{
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100% - 200px);
+    height: 110px;
+    position: fixed;
+    z-index: 10;
+    font-family:var(--app-bar-font) ;
+ }
+
+ .logo{
+    margin-left: 10px;
+    width: 120px;
+    height: 110px;
+ }
+
+#right-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: inherit;
+
+}
+
+ .app-bar-element{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+ }
+ @media only screen and (max-width: 1130px){
+    .app-bar-element{
+        width: 20%;
+        text-decoration: none;
+        color: white;
+        margin: 20px;
+     }
+
+ }
+
+ #hamburger-menu{
+    vertical-align: bottom;
+    width: 25px;
+    height: 25px;
+ }
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+    #app-bar{
+        border-radius: 0px 0px 5px 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        position: fixed;
+        z-index: 10;
+        font-family:var(--app-bar-font) ;
+     }
+    
+     .logo{
+        margin-left: 10px;
+        width: 90px;
+        height: 80px;
+     }
+    
+    #right-elements{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        width: inherit;
+    
+    }
+    
+     .app-bar-element{
+        display: none;
+     }
+   
+    
+     #hamburger-menu{
+        vertical-align: bottom;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+     }
+   
+}
+
+@media only screen and (min-width: 765px) and (max-width:1087px){
+   #app-bar{
+      border-radius: 0px 0px 5px 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      height: 90px;
+      position: fixed;
+      z-index: 10;
+      font-family:var(--app-bar-font) ;
+   }
+  
+   .logo{
+      margin-left: 10px;
+      width: 120px;
+      height:110px;
+   }
+  
+  #right-elements{
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+      width: inherit;
+  
+  }
+  
+   .app-bar-element{
+      display: none;
+   }
+ 
+  
+   #hamburger-menu{
+      margin-right: 20px;
+      vertical-align: bottom;
+      width: 40px;
+      height: 40px;
+   }
+ 
+}
+
+@keyframes appBarDiscard{
+    0%{
+        top: 0%;
+    }
+    80%{
+        top: -100%;  
+    }
+    80%{
+        display: none;
+    } 
+}

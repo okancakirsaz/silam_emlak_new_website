@@ -1,0 +1,203 @@
+@import url(../../../core/consts/style_conts.css);
+
+#video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%; 
+  }
+  
+  #video-element {
+    width: 100%; 
+    height: auto; 
+    position: relative;
+    z-index: 1;
+  }
+  
+  #video-blur {
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+    background-color: rgb(65, 65, 65);
+    opacity: 20%;
+    z-index: 2; 
+  }
+
+  .main-link-container:hover .bottom-divider{
+    animation: dividerHover 0.5s linear forwards;
+    
+  }
+
+  .bottom-divider:hover{
+    background-color: var(--divider-hovered-color);
+  }
+  
+
+@media only screen and (min-width: 1024px){
+    .main-texts{
+        text-decoration: none;
+        letter-spacing: 2px;
+        position: absolute;
+        color: white;
+        z-index: 5;
+        text-shadow: 3px 3px 6px black;
+    }
+    #main-title{
+        font-size: 50px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #main-adverts-container{
+        z-index: 5;
+        position: absolute;
+        top: 35%;
+        max-width: 100%;
+        min-width: 249px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #main-adverts-text{
+        font-size: 20px;
+    }
+
+    .bottom-divider{
+        position: relative;
+        top: 25px;
+        width: inherit;
+        height: 3px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    #main-contact-text{
+        font-size: 20px; 
+    }
+
+    #main-content-container{
+        z-index: 5;
+        position: absolute;
+        width: 70px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+    .main-texts{
+        text-decoration: none;
+        letter-spacing: 1px;
+        position: absolute;
+        color: white;
+        z-index: 5;
+    }
+    #main-title{
+        font-size: 25px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #main-adverts-container{
+        z-index: 5;
+        position: absolute;
+        top: 45%;
+        max-width: 100%;
+        min-width: 179px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #main-adverts-text{
+        font-size: 15px;
+    }
+
+    .bottom-divider{
+        position: relative;
+        top: 22px;
+        width: inherit;
+        height: 3px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    #main-contact-text{
+        font-size: 15px;
+        
+    }
+
+    #main-content-container{
+        z-index: 5;
+        position: absolute;
+        width: 60px;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+   
+}
+
+@media only screen and (min-width: 765px) and (max-width:1023px){
+    .main-texts{
+        text-decoration: none;
+        letter-spacing: 2px;
+        position: absolute;
+        color: white;
+        z-index: 5;
+    }
+    #main-title{
+        font-size: 50px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #main-adverts-container{
+        z-index: 5;
+        position: absolute;
+        top: 40%;
+        max-width: 100%;
+        min-width: 249px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #main-adverts-text{
+        font-size: 20px;
+    }
+
+    .bottom-divider{
+        position: relative;
+        top: 25px;
+        width: inherit;
+        height: 3px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    #main-contact-text{
+        font-size: 20px;
+        
+    }
+
+    #main-content-container{
+        z-index: 5;
+        position: absolute;
+        width: 70px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+}
+
+@keyframes dividerHover {
+  from {background-color: white;}
+  to {background-color: var(--divider-hovered-color);}
+}

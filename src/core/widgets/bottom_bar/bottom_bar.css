@@ -1,0 +1,138 @@
+@import url(../../../core/consts/style_conts.css);
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Lora&family=Open+Sans&display=swap');
+
+@media only screen and (min-width: 1088px){
+ .bottom-bar{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    background:linear-gradient(to right, #bb5454,#f68686);
+    display: flex;
+    align-items: center;
+ }
+ #bottomLinks{
+    color: white;
+    margin-top: 20px;
+ }
+ .bottomElement{
+    color: white;
+ }
+ #createdByText{
+    font-family: 'Bruno Ace';
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ #contacts{
+    position: absolute;
+    left: 50%;
+    margin-top: 60px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .bottomContacts{
+    width: 60px;
+    object-fit: contain;
+    height: 60px;
+    margin-left: 20px;
+ }
+ #linkedin{
+    width: 30px;
+    height: 30px;
+ }
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+   .bottom-bar{
+      margin-top: 60px;
+      width: 100%;
+      height: 210px;
+      border-radius: 20px 20px 0px 0px;
+      background:linear-gradient(to right, #bb5454,#f68686);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   #bottomLinks{
+      color: white;
+      margin-top: 20px;
+   }
+   .bottomElement{
+      color: white;
+   }
+   #createdByText{
+      font-family: 'Bruno Ace';
+      text-align: center;
+      color: white;      
+   }
+   #contacts{
+      margin-top: 10px;
+   }
+   .bottomContacts{
+      width: 60px;
+      object-fit: contain;
+      height: 60px;
+      margin-left: 10px;
+   }
+   #linkedin{
+      width: 30px;
+      height: 30px;
+      margin-bottom: 13px;
+   }
+}
+
+@media only screen and (min-width: 765px) and (max-width:1087px){
+   .bottom-bar{
+      width: 100%;
+      height: 200px;
+      border-radius: 20px 20px 0px 0px;
+      background:linear-gradient(to right, #bb5454,#f68686);
+      display: flex;
+      align-items: center;
+   }
+   #bottomLinks{
+      color: white;
+      margin-top: 20px;
+   }
+   .bottomElement{
+      color: white;
+   }
+   #createdByText{
+      font-family: 'Bruno Ace';
+      text-align: center;
+      color: white;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   #contacts{
+      position: absolute;
+      left: 50%;
+      margin-top: 60px;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .bottomContacts{
+      width: 60px;
+      object-fit: contain;
+      height: 60px;
+      margin-left: 20px;
+   }
+   #linkedin{
+      width: 30px;
+      height: 30px;
+   }
+}
+

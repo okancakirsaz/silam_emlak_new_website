@@ -1,0 +1,150 @@
+@import url(../../consts/style_conts.css);
+  
+.caller:hover .article-image{
+    animation: imageAnimation 1s linear forwards;
+}
+.caller{
+    text-decoration: none;
+}
+@media only screen and (min-width: 765px){
+.articleElement{
+   overflow: hidden;
+   margin: 20px;
+   width: 400px;
+   background-color: white;
+   height: 300px;
+   border-radius: 5px;
+}
+
+.upper-container{
+width: 100%;
+overflow: hidden;
+height: 200px;
+}
+
+.type,.is-have-furniture{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 80px;
+    border-radius:0px 3px 3px 0px;
+    height: 30px;
+    background-color: #262626cd;
+    position: absolute;
+}
+
+.type{
+    margin-top: 5px;
+}
+
+.is-have-furniture{
+    margin-top: 40px;
+}
+
+.article-image{
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.bottom-container{
+    width: 100%;
+    height: 100px;
+}
+
+.neightborhood,.price{
+ color: black;
+ margin: 5px;
+ font-size: 18px;
+}
+
+.price{
+ font-size: 20px !important; 
+}
+
+.see-details{
+ margin-left: 30%;
+ color: blue;
+}
+
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+    .articleElement{
+        overflow: hidden;
+        width: 350px;
+        background-color: white;
+        height: 250px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+     }
+     
+     .upper-container{
+     width: 100%;
+     overflow: hidden;
+     height: 150px;
+     }
+     
+     .type,.is-have-furniture{
+         z-index: 1;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: white;
+         width: 80px;
+         border-radius:0px 3px 3px 0px;
+         height: 30px;
+         background-color: #262626cd;
+         position: absolute;
+     }
+     
+     .type{
+         margin-top: 5px;
+     }
+     
+     .is-have-furniture{
+         margin-top: 40px;
+     }
+     
+     .article-image{
+         width: 400px;
+         height: 150px;
+         overflow: hidden;
+         object-fit: cover;
+     }
+     
+     .bottom-container{
+         width: 100%;
+         height: 100px;
+     }
+     
+     .neightborhood,.price{
+      color: black;
+      margin: 5px;
+      font-size: 16px;
+     }
+     
+     .price{
+      font-size: 18px !important; 
+     }
+     
+     .see-details{
+      margin-left: 30%;
+      color: blue;
+     }
+
+   
+}
+
+@keyframes imageAnimation {
+    0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.2);
+      }
+      
+}
