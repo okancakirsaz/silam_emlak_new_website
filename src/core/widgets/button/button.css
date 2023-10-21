@@ -1,0 +1,14 @@
+@import url(../../../core/consts/style_conts.css);
+
+#customInput{
+    background-color: #f4f4f4;
+    border: none;
+    font-weight: bold;
+    font-family:var(--app-bar-font);
+    box-shadow: 1px 1px 3px 1px #3a3a3a9d;
+    border-radius: 5px;
+}
+
+#customInput:active{
+    box-shadow: inset 1px 1px 3px 1px #3a3a3a9d;
+}

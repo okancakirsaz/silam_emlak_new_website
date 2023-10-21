@@ -1,0 +1,371 @@
+@import url(../../../core/consts/style_conts.css);
+
+#body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+body{
+    background-image: url("../../../../assets/afyon_castle.jfif");
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1024px){
+
+
+#body{
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: row;
+}
+
+#contactAdresses{
+    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-right: 100px;
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px #3a3a3a;
+}
+#adresses{
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 500px;
+    height: 120px;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 6px 1px #3a3a3a;
+}
+
+#firstContainer{
+    display: flex;
+   flex-direction: row;
+}
+
+#logo{
+    padding: 5px;
+    margin-left: 25px;
+    margin-top: 30px;
+    background-color: navy;
+    box-shadow: 1px 1px 3px 1px #3a3a3a9d;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.contactAdress{
+    margin-bottom: 5px;
+    background-color: #f4f4f4;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #3a3a3a9d;
+}
+
+.contactImage{
+    margin-right: 5px;
+    margin-top: 3px;
+    margin-left: 3px;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 4px 1px #3a3a3a;
+}
+
+.contactContent{
+    width: auto;
+    height: 30px;
+    position: relative;
+    bottom: 20px;
+}
+
+#inputsTitle{
+    margin-top: 3px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#phone{
+animation: phoneAnimation 0.8s linear forwards;
+}
+
+#mail{
+    animation: mailAnimation 0.8s linear forwards;
+}
+
+.inputTitle{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#nameContainer{
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+#phoneNumberContainer{
+    position: relative;
+    bottom: 42px;
+    left: 270px;   
+}
+#describeContainer{
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+#mailContainer{
+    position: relative;
+    bottom: 193px;
+    left: 270px;
+}
+#button{
+    position: relative;
+    bottom: 120px;
+    left: 330px;
+}
+@keyframes phoneAnimation{
+    0%{
+        margin-left: 0px;
+    }
+
+    100%{
+        margin-left: 50px;
+    }
+}
+
+@keyframes mailAnimation{
+    0%{
+        margin-left: 0px;
+    }
+
+    100%{
+        margin-left: 150px;
+    }
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+
+    
+    #contactAdresses{
+        margin: 20px;
+        width: calc(100% - 40px);
+        height: 620px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px 2px #3a3a3a;
+    }
+    #adresses{
+        padding: 10px;
+        margin: 10px;
+        width: calc(100% - 40px);
+        height: 100px;
+        border-radius: 20px;
+        box-shadow: inset 1px 1px 6px 1px #3a3a3a;
+    }
+    
+    #firstContainer{
+        display: flex;
+       flex-direction: row;
+    }
+    
+    #logo{
+        display: none;
+    }
+    
+    .contactAdress{
+        margin-bottom: 15px;
+        background-color: #f4f4f4;
+        width: 240px;
+        font-size: 13px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px 1px #3a3a3a9d;
+    }
+    
+    .contactImage{
+        margin-right: 5px;
+        margin-top: 3px;
+        margin-left: 3px;
+        width: 20px;
+        background-color: gray;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: inset 1px 1px 4px 1px #3a3a3a;
+    }
+    
+    .contactContent{
+        width: auto;
+        height: 30px;
+        position: relative;
+        bottom: 10px;
+    }
+    
+    #inputsTitle{
+        margin-top: 3px;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    #phone{
+    animation: phoneAnimation 0.8s linear forwards;
+    }
+    
+    #mail{
+        animation: mailAnimation 0.8s linear forwards;
+    }
+    
+    .inputTitle{
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .inputElement{
+        position: relative;
+        left: calc(50% - 110px);
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    #button{
+        position: relative;
+        margin-top: 20px;
+        left: calc(50% - 55px)!important;
+    }
+    @keyframes phoneAnimation{
+        0%{
+            margin-left: 0px;
+        }
+    
+        100%{
+            margin-left: 20px;
+        }
+    }
+    
+    @keyframes mailAnimation{
+        0%{
+            margin-left: 0px;
+        }
+    
+        100%{
+            margin-left: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 765px) and (max-width:1023px){
+    body{
+        background-size:cover;
+    }
+    #body{
+        height: 1024px;
+    }
+
+    #contactAdresses{
+        position: relative;
+        left: calc(50% - 210px);
+        margin-top: calc(25%) !important;
+        margin: 20px;
+        width: 400px;
+        height: 620px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px 2px #3a3a3a;
+    }
+    #adresses{
+        padding: 10px;
+        margin: 10px;
+        width: calc(100% - 40px);
+        height: 100px;
+        border-radius: 20px;
+        box-shadow: inset 1px 1px 6px 1px #3a3a3a;
+    }
+    
+    #firstContainer{
+        display: flex;
+       flex-direction: row;
+    }
+    
+    #logo{
+        display: none;
+    }
+    
+    .contactAdress{
+        margin-bottom: 15px;
+        background-color: #f4f4f4;
+        width: 240px;
+        font-size: 13px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px 1px #3a3a3a9d;
+    }
+    
+    .contactImage{
+        margin-right: 5px;
+        margin-top: 3px;
+        margin-left: 3px;
+        width: 20px;
+        background-color: gray;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: inset 1px 1px 4px 1px #3a3a3a;
+    }
+    
+    .contactContent{
+        width: auto;
+        height: 30px;
+        position: relative;
+        bottom: 10px;
+    }
+    
+    #inputsTitle{
+        margin-top: 3px;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    #phone{
+    animation: phoneAnimation 0.8s linear forwards;
+    }
+    
+    #mail{
+        animation: mailAnimation 0.8s linear forwards;
+    }
+    
+    .inputTitle{
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .inputElement{
+        position: relative;
+        left: calc(50% - 110px);
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    #button{
+        position: relative;
+        margin-top: 20px;
+        left: calc(50% - 55px)!important;
+    }
+    @keyframes phoneAnimation{
+        0%{
+            margin-left: 0px;
+        }
+    
+        100%{
+            margin-left: 20px;
+        }
+    }
+    
+    @keyframes mailAnimation{
+        0%{
+            margin-left: 0px;
+        }
+    
+        100%{
+            margin-left: 80px;
+        }
+    }
+}
+
