@@ -40,6 +40,10 @@ module.exports = {
       filename:"/iletisim.html",
       template:"./src/views/contact/contact.html"
     }),
+    new HtmlWebpackPlugin({
+      filename:"/konumumuz.html",
+      template:"./src/views/our_location/our_location.html"
+    }),
     
     new NodePolyfillPlugin()
   ]
