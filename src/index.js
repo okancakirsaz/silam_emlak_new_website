@@ -21,3 +21,9 @@ try {
    loadStyle("./views/contact/style/contact");
    await loadModule("./views/contact/contact");
 }
+
+if(window.location.href.includes("/konumumuz.html")){
+   loadStyle("./views/our_location/style/map");
+   loadStyle("./views/our_location/style/bottom_elements");
+   await loadModule("./views/our_location/our_location");
+}

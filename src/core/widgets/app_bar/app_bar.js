@@ -28,6 +28,7 @@ export class AppBar{
     property.classList.add("app-bar-element");
     aboutUs.classList.add("app-bar-element");
     location.innerHTML="Konumumuz";
+    location.href="/konumumuz.html";
     parcel.innerHTML="Ada Parsel Sorgulama";
     parcel.href="https://parselsorgu.tkgm.gov.tr/";
     parcel.target="_blank";
@@ -89,6 +90,7 @@ export class AppBar{
     const ourLocation = document.createElement("a");
     ourLocation.classList.add("menuElement");
     ourLocation.innerHTML="Konumumuz";
+    ourLocation.href="/konumumuz.html";
 
     const parcel = document.createElement("a");
     parcel.classList.add("menuElement");
