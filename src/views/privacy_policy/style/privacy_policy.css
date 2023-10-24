@@ -1,0 +1,161 @@
+@import url(../../../core/consts/style_conts.css);
+  
+
+@media only screen and (min-width: 1024px){
+    #container{
+        overflow-x: hidden;
+        width: 700px;
+        background-color: white;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-right: auto;
+        box-shadow: 1px 1px 3px 1px #3a3a3a9d;
+    }
+
+#imgAndTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: navy;
+    border-radius: 20px;
+}
+
+#title{
+    position: relative;
+    color: #c01111;
+    font-size:37px;
+    animation: titleAnim 1s ease forwards;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    margin-left: 100px;
+}
+
+#description{
+    position: relative;
+    animation: descAnim 1s ease forwards;
+    width: 98%;
+    margin: 1%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+@keyframes descAnim {
+    0%{
+        left: -1000px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+@keyframes titleAnim {
+    0%{
+        left: 1000px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+    #container{
+        width: 98%;
+        background-color: white;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-top: 20px;
+        margin-bottom: 25%;
+        margin-right: auto;
+        box-shadow: 1px 1px 3px 1px #3a3a3a9d;
+    }
+
+    #imgAndTitle{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #logo{
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: navy;
+        border-radius: 20px;
+    }
+    
+    #title{
+        color: #c01111;
+        font-size:27px;
+        text-decoration: underline;
+        letter-spacing: 3px;
+        margin-left: 10px;
+    }
+    
+   
+    
+    #description{
+        width: 98%;
+        margin: 1%;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 765px) and (max-width:1023px){
+
+    #container{
+        width: 70%;
+        background-color: white;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-top: 20px;
+        margin-bottom: 25%;
+        margin-right: auto;
+        box-shadow: 1px 1px 3px 1px #3a3a3a9d;
+    }
+
+    #imgAndTitle{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #logo{
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: navy;
+        border-radius: 20px;
+    }
+    
+    #title{
+        color: #c01111;
+        font-size:37px;
+        text-decoration: underline;
+        letter-spacing: 3px;
+        margin-left: 100px;
+    }
+    
+   
+    
+    #description{
+        width: 98%;
+        margin: 1%;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+}

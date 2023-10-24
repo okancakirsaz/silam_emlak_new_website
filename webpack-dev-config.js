@@ -44,7 +44,19 @@ module.exports = {
       filename:"/konumumuz.html",
       template:"./src/views/our_location/our_location.html"
     }),
+    new HtmlWebpackPlugin({
+      filename:"/hakkimizda.html",
+      template:"./src/views/about_us/about_us.html"
+    }),
     
+    new HtmlWebpackPlugin({
+      filename:"/gizlilik-politikasi.html",
+      template:"./src/views/privacy_policy/privacy_policy.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename:"/gayrimenkul-danismanlik.html",
+      template:"./src/views/property_consulment/property_consulment.html"
+    }),
     new NodePolyfillPlugin()
   ]
 };

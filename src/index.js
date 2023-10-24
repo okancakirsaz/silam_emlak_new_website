@@ -27,3 +27,18 @@ if(window.location.href.includes("/konumumuz.html")){
    loadStyle("./views/our_location/style/bottom_elements");
    await loadModule("./views/our_location/our_location");
 }
+
+if(window.location.href.includes("/hakkimizda.html")){
+   loadStyle("./views/about_us/style/about_us");
+   await loadModule("./views/about_us/about_us");
+}
+
+if(window.location.href.includes("/gizlilik-politikasi.html")){
+   loadStyle("./views/privacy_policy/style/privacy_policy");
+   await loadModule("./views/privacy_policy/privacy_policy");
+}
+
+if(window.location.href.includes("/gayrimenkul-danismanlik.html")){
+   loadStyle("./views/property_consulment/style/property_consulment");
+   await loadModule("./views/property_consulment/property_consulment");
+}

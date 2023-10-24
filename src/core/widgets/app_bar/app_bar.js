@@ -33,7 +33,9 @@ export class AppBar{
     parcel.href="https://parselsorgu.tkgm.gov.tr/";
     parcel.target="_blank";
     property.innerHTML="Gayrimenkul Danışmanlık";
-    aboutUs.innerHTML="Hakkımızda"
+    property.href="gayrimenkul-danismanlik.html";
+    aboutUs.innerHTML="İlanlar";
+    aboutUs.href="ilanlar.html";
     const menu = document.createElement("img");
     menu.id="hamburger-menu";
     menu.src=menuImage;
@@ -101,10 +103,12 @@ export class AppBar{
     const consulment = document.createElement("a");
     consulment.classList.add("menuElement");
     consulment.innerHTML="Gayrimenkul Danışmanlık";
+    consulment.href="/gayrimenkul-danismanlik.html";
 
     const aboutUs = document.createElement("a");
     aboutUs.classList.add("menuElement");
     aboutUs.innerHTML="Hakkımızda";
+    aboutUs.href="/hakkimizda.html";
 
     const contact = document.createElement("a");
     contact.classList.add("menuElement");

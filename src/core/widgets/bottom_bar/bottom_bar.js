@@ -9,37 +9,26 @@ build(){
 var bottomBar = document.createElement("div");
 bottomBar.classList.add("bottom-bar");
 
-// Ul öğesini oluştur
 var ul = document.createElement("ul");
 ul.setAttribute("id", "bottomLinks");
 
-// Li öğesini oluştur ve içeriklerini ekleyin
 var li1 = document.createElement("li");
 var a1 = document.createElement("a");
 a1.classList.add("bottomElement");
-a1.setAttribute("href", "");
+a1.setAttribute("href", "/gizlilik-politikasi.html");
 a1.textContent = "Gizlilik Politikası";
 li1.appendChild(a1);
 
 var li2 = document.createElement("li");
 var a2 = document.createElement("a");
 a2.classList.add("bottomElement");
-a2.setAttribute("href", "");
+a2.setAttribute("href", "/hakkimizda.html");
 a2.textContent = "Hakkımızda";
 li2.appendChild(a2);
 
-var li3 = document.createElement("li");
-var a3 = document.createElement("a");
-a3.classList.add("bottomElement");
-a3.setAttribute("href", "");
-a3.textContent = "Site Hartiası";
-li3.appendChild(a3);
-
 ul.appendChild(li1);
 ul.appendChild(li2);
-ul.appendChild(li3);
 
-// "Developed by İsmet Okan Çakırsaz" metnini içeren div öğesini oluştur
 var createdBy = document.createElement("div");
 createdBy.setAttribute("id", "createdBy");
 
@@ -82,11 +71,9 @@ contacts.appendChild(linkedinLink);
 createdBy.appendChild(createdByText);
 createdBy.appendChild(contacts);
 
-// Ana div öğesine alt öğeleri ekleyin
 bottomBar.appendChild(ul);
 bottomBar.appendChild(createdBy);
 
-// Sayfanın sonuna eklemek için kullanabilirsiniz
 document.body.appendChild(bottomBar);
 
 }
