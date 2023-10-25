@@ -1,0 +1,230 @@
+@import url(../../../core/consts/style_conts.css);
+  
+html{
+    min-height: 100%;
+}
+
+body{
+    background: linear-gradient(#0d0058, #e2432e) fixed;
+    }
+@media only screen and (min-width: 1024px){
+    #mainContainer{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 120px;
+        width: 90%;
+        margin-left:auto;
+        margin-right: auto;
+        border-radius: 10px;
+        margin-bottom: 200px;
+        background-color: #f4f4f4;
+        box-shadow: 1px 1px 3px 1px #3a3a3a9d;
+     }
+    #imageContainer{
+      display: flex;
+      align-items: center;
+      width: 500px;
+      height: 520px;
+    }
+    #image{
+        position: absolute;
+        width: 500px;
+        height: 520px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .imgNavigator{
+        cursor: pointer;
+        position: absolute;
+        z-index: 3;
+        padding: 2px;
+        border-radius: 500px;
+        width: 30px;
+        height: 30px;
+        background-color: #2727279f;
+    }
+    #back{
+        margin-left: 7px;
+    }
+    #front{
+        margin-left: 460px;
+    }
+
+    #infoContainer{
+        width:calc(100% - 500px);
+        margin-left: 10px;
+        height: 520px;
+    }
+
+    .element{
+        display: flex;
+        flex-direction: row;
+        margin: 6px;
+        margin-bottom: 12px;
+    }
+    .title{
+        color: #e20a0a;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .content{
+        font-size: 16px;
+        margin-left: 9px;
+    }
+    #contact{
+        color: red;
+        position: relative;
+        top: 60px;
+        left: 1%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+    #mainContainer{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 120px;
+        width: 95%;
+        margin-left:auto;
+        margin-right: auto;
+        border-radius: 10px;
+        margin-bottom: 200px;
+        background-color: #f4f4f4;
+        padding-bottom: 20px;
+        box-shadow: 1px 1px 3px 1px #3a3a3a9d;
+     }
+    #imageContainer{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 220px;
+    }
+    #image{
+        position: absolute;
+        width: 100%;
+        height: 220px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .imgNavigator{
+        cursor: pointer;
+        position: absolute;
+        z-index: 3;
+        padding: 2px;
+        border-radius: 500px;
+        width: 30px;
+        height: 30px;
+        background-color: #2727279f;
+    }
+    #back{
+        margin-left: 7px;
+    }
+    #front{
+        margin-left: calc(100% - 42px);
+    }
+
+    #infoContainer{
+        width:calc(100%-10px);
+        margin-left: 10px;
+    }
+
+    .element{
+        width: calc(100% - 3px);
+        display: flex;
+        flex-direction: row;
+        margin: 6px;
+        margin-bottom: 12px;
+    }
+    .title{
+        color: #e20a0a;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .content{
+        font-size: 15px;
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+    #contact{
+        width: 100%;
+        color: red;
+        font-size: 13px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 765px) and (max-width:1023px){
+    #mainContainer{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 120px;
+        width: 65%;
+        margin-left:auto;
+        margin-right: auto;
+        border-radius: 10px;
+        margin-bottom: 200px;
+        background-color: #f4f4f4;
+        padding-bottom: 20px;
+        box-shadow: 1px 1px 3px 1px #3a3a3a9d;
+     }
+    #imageContainer{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 320px;
+    }
+    #image{
+        position: absolute;
+        width: 100%;
+        height: 320px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .imgNavigator{
+        cursor: pointer;
+        position: absolute;
+        z-index: 3;
+        padding: 2px;
+        border-radius: 500px;
+        width: 30px;
+        height: 30px;
+        background-color: #2727279f;
+    }
+    #back{
+        margin-left: 7px;
+    }
+    #front{
+        margin-left: calc(100% - 42px);
+    }
+
+    #infoContainer{
+        width:calc(100%-10px);
+        margin-left: 10px;
+    }
+
+    .element{
+        width: calc(100% - 3px);
+        display: flex;
+        flex-direction: row;
+        margin: 6px;
+        margin-bottom: 12px;
+    }
+    .title{
+        color: #e20a0a;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .content{
+        font-size: 16px;
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+    #contact{
+        width: 100%;
+        color: red;
+        font-size: 16px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}

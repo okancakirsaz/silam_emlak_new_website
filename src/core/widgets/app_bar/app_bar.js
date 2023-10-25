@@ -115,9 +115,10 @@ export class AppBar{
     contact.innerHTML="İletişim";
     contact.href="/iletisim.html";
 
-    const calculator = document.createElement("a");
-    calculator.classList.add("menuElement");
-    calculator.innerHTML="Mülk Değeri Hesaplama";
+    // const calculator = document.createElement("a");
+    // calculator.classList.add("menuElement");
+    // calculator.innerHTML="Mülk Değeri Hesaplama";
+    // calculator.href="/hesaplama.html";
 
     const articles = document.createElement("a");
     articles.classList.add("menuElement");
@@ -130,7 +131,7 @@ export class AppBar{
     parent.appendChild(consulment);
     parent.appendChild(aboutUs);
     parent.appendChild(contact);
-    parent.appendChild(calculator);
+    //parent.appendChild(calculator);
     parent.appendChild(articles);
 
     document.body.insertBefore(parent,document.body.firstChild);

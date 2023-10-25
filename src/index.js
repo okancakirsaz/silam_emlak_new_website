@@ -47,3 +47,13 @@ if(window.location.href.includes("/ilanlar.html")){
    loadStyle("./views/articles/style/articles");
    await loadModule("./views/articles/articles");
 }
+
+if(window.location.href.includes("/ilan.html")){
+   loadStyle("./views/opened_article/style/opened_article");
+   await loadModule("./views/opened_article/opened_article");
+}
+
+if(window.location.href.includes("/hesaplama.html")){
+   loadStyle("./views/calculator/style/calculator");
+   await loadModule("./views/calculator/calculator");
+}

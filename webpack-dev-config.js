@@ -62,6 +62,14 @@ module.exports = {
       filename:"/ilanlar.html",
       template:"./src/views/articles/articles.html"
     }),
+    new HtmlWebpackPlugin({
+      filename:"/ilan.html",
+      template:"./src/views/opened_article/opened_article.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename:"/hesaplama.html",
+      template:"./src/views/calculator/calculator.html"
+    }),
     new NodePolyfillPlugin()
   ]
 };
