@@ -42,3 +42,8 @@ if(window.location.href.includes("/gayrimenkul-danismanlik.html")){
    loadStyle("./views/property_consulment/style/property_consulment");
    await loadModule("./views/property_consulment/property_consulment");
 }
+
+if(window.location.href.includes("/ilanlar.html")){
+   loadStyle("./views/articles/style/articles");
+   await loadModule("./views/articles/articles");
+}

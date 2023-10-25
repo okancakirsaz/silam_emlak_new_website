@@ -122,6 +122,7 @@ export class AppBar{
     const articles = document.createElement("a");
     articles.classList.add("menuElement");
     articles.innerHTML="İlanlar";
+    articles.href="/ilanlar.html";
     
     parent.appendChild(popUpAndTitleSheet);
     parent.appendChild(ourLocation);

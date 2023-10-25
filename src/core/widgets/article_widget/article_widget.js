@@ -11,7 +11,7 @@ export class ArticleWidget{
     mainContainer.classList.add("articleElement");
     const caller = document.createElement("a");
     caller.classList.add("caller");
-    caller.href=this.widgetData["id"];
+    caller.href="/ilan.html?data="+this.widgetData["id"];
     const upperContainer = document.createElement("div");
     upperContainer.classList.add("upper-container");
     const bottomContainer = document.createElement("div");

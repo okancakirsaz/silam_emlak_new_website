@@ -9,10 +9,11 @@
 @media only screen and (min-width: 765px){
 .articleElement{
    overflow: hidden;
+   box-shadow: 1px 1px 3px 1px #3a3a3a9d;
    margin: 20px;
-   width: 400px;
+   max-width: 400px;
    background-color: white;
-   height: 300px;
+   max-height: 300px;
    border-radius: 5px;
 }
 
@@ -75,6 +76,7 @@ height: 200px;
 @media only screen and (min-width: 320px) and (max-width:765px){
     .articleElement{
         overflow: hidden;
+        box-shadow: 1px 1px 3px 1px #3a3a3a9d;
         width: 350px;
         background-color: white;
         height: 250px;

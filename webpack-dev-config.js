@@ -57,6 +57,11 @@ module.exports = {
       filename:"/gayrimenkul-danismanlik.html",
       template:"./src/views/property_consulment/property_consulment.html"
     }),
+
+    new HtmlWebpackPlugin({
+      filename:"/ilanlar.html",
+      template:"./src/views/articles/articles.html"
+    }),
     new NodePolyfillPlugin()
   ]
 };
