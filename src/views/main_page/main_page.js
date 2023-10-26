@@ -6,6 +6,7 @@ new AppBar();
 const viewModel=new MainPageViewModel();
 await viewModel.fetchArticles();
 viewModel.rotateHouses();
+viewModel.init();
 new BottomBar();
 }
 catch(_){

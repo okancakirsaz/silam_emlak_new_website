@@ -70,6 +70,14 @@ module.exports = {
       filename:"/hesaplama.html",
       template:"./src/views/calculator/calculator.html"
     }),
+    new HtmlWebpackPlugin({
+      filename:"/panel.html",
+      template:"./src/views/panel_login/panel_login.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename:"/silam-emlak-admin.html",
+      template:"./src/views/panel/panel.html"
+    }),
     new NodePolyfillPlugin()
   ]
 };

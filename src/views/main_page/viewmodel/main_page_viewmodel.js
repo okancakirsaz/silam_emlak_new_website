@@ -1,7 +1,11 @@
 import { ArticleWidget } from "../../../core/widgets/article_widget/article_widget";
 import { MainPageServices } from "../services/main_page_services.js";
 export class MainPageViewModel{
-    service = new MainPageServices() ;
+    service = new MainPageServices();
+
+    init(){
+        localStorage.removeItem("logged");
+    }
 
     async fetchArticles(){
         const response= await this.service.getArticles();

@@ -57,3 +57,13 @@ if(window.location.href.includes("/hesaplama.html")){
    loadStyle("./views/calculator/style/calculator");
    await loadModule("./views/calculator/calculator");
 }
+
+if(window.location.href.includes("/panel.html")){
+   loadStyle("./views/panel_login/style/panel_login");
+   await loadModule("./views/panel_login/panel_login");
+}
+
+if(window.location.href.includes("/silam-emlak-admin.html")){
+   loadStyle("./views/panel_login/style/panel");
+   await loadModule("./views/panel_login/panel");
+}
