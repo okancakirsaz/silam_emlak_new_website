@@ -78,6 +78,18 @@ module.exports = {
       filename:"/silam-emlak-admin.html",
       template:"./src/views/panel/panel.html"
     }),
+    new HtmlWebpackPlugin({
+      filename:"/silam-emlak-admin-delete-article.html",
+      template:"./src/views/panel/views/delete_article.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename:"/silam-emlak-admin-add-article.html",
+      template:"./src/views/panel/views/add_article.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename:"/silam-emlak-admin-messages.html",
+      template:"./src/views/panel/views/messages.html"
+    }),
     new NodePolyfillPlugin()
   ]
 };

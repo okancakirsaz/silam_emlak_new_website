@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div id="inputsContainer">
+    <select id="province" class="select"></select><br>
+    <select id="isHaveFurniture" class="select">
+        <option value="Evet">Eşyalı</option>
+        <option value="Hayır">Eşyasız</option>
+    </select><br>
+    <select id="state" class="select">
+        <option value="Kiralık">Kiralık</option>
+        <option value="Satılık">Satılık</option>
+    </select> <br>
+    <select id="type" class="select">
+        <option value="Daire">Daire</option>
+        <option value="İşyeri">İşyeri</option>
+        <option value="Müstakil">Müstakil</option>
+        <option value="Arsa">Arsa</option>
+        <option value="Tarla">Tarla</option>
+    </select>    
+    <div class="label">Bina Yaşı</div>
+    <div id="age" class="textInputAdd"></div>
+    <div class="label">Brüt m2</div>
+    <div id="brut"class="textInputAdd"></div>
+    <div class="label">Net m2</div>
+    <div id="net"class="textInputAdd"></div>
+    <div class="label">Ücret</div>
+    <div id="cost"class="textInputAdd"></div>
+    <div class="label">Bulunduğu kat</div>
+    <div id="currentFloor"class="textInputAdd"></div>
+    <div class="label">Kat Sayısı</div>
+    <div id="floorCount"class="textInputAdd"></div>
+    <div class="label">Yakıt Tipi</div>
+    <div id="fuel"class="textInputAdd"></div>
+    <div class="label">Açıklama</div>
+    <div id="description"class="textInputAdd"></div>
+    <input type="file" multiple id="filePicker"><br>
+    <button id="submitBtn">Onayla</button>
+    </div>
+</body>
+</html>

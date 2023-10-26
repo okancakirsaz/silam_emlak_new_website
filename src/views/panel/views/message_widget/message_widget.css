@@ -1,0 +1,55 @@
+.messageContainer{
+    margin: 20px;
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 1px #3a3a3a9d;
+    padding: 10px;
+}
+.descriptionContainer{
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    background-color: navy;
+}
+.numberContainer{
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: navy;
+}
+.nameContainer{
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: navy;
+}
+.mailContainer{
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: navy;
+}
+.deleteButton{
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    box-shadow:inset 1px 1px 3px 1px #3a3a3a9d;
+    background-color: red;
+}

@@ -63,7 +63,7 @@ if(window.location.href.includes("/panel.html")){
    await loadModule("./views/panel_login/panel_login");
 }
 
-if(window.location.href.includes("/silam-emlak-admin.html")){
-   loadStyle("./views/panel_login/style/panel");
-   await loadModule("./views/panel_login/panel");
+if(window.location.href.includes("/silam-emlak-admin")){
+   loadStyle("./views/panel/style/panel");
+   await loadModule("./views/panel/panel");
 }
