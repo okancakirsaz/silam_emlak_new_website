@@ -27,9 +27,62 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template:"./src/views/main_page/main_page.html",
+      template:"./src/views/main_page/main_page.html"
     }),
-    
+    new HtmlWebpackPlugin({
+     filename:"/iletisim.html",
+     template:"./src/views/contact/contact.html"
+   }),
+   new HtmlWebpackPlugin({
+     filename:"/konumumuz.html",
+     template:"./src/views/our_location/our_location.html"
+   }),
+   new HtmlWebpackPlugin({
+     filename:"/hakkimizda.html",
+     template:"./src/views/about_us/about_us.html"
+   }),
+   
+   new HtmlWebpackPlugin({
+     filename:"/gizlilik-politikasi.html",
+     template:"./src/views/privacy_policy/privacy_policy.html"
+   }),
+   new HtmlWebpackPlugin({
+     filename:"/gayrimenkul-danismanlik.html",
+     template:"./src/views/property_consulment/property_consulment.html"
+   }),
+
+   new HtmlWebpackPlugin({
+     filename:"/ilanlar.html",
+     template:"./src/views/articles/articles.html"
+   }),
+   new HtmlWebpackPlugin({
+     filename:"/ilan.html",
+     template:"./src/views/opened_article/opened_article.html"
+   }),
+   new HtmlWebpackPlugin({
+     filename:"/hesaplama.html",
+     template:"./src/views/calculator/calculator.html"
+   }),
+   new HtmlWebpackPlugin({
+     filename:"/panel.html",
+     template:"./src/views/panel_login/panel_login.html"
+   }),
+   new HtmlWebpackPlugin({
+     filename:"/silam-emlak-admin.html",
+     template:"./src/views/panel/panel.html"
+   }),
+   new HtmlWebpackPlugin({
+     filename:"/silam-emlak-admin-delete-article.html",
+     template:"./src/views/panel/views/delete_article.html"
+   }),
+   new HtmlWebpackPlugin({
+     filename:"/silam-emlak-admin-add-article.html",
+     template:"./src/views/panel/views/add_article.html"
+   }),
+   new HtmlWebpackPlugin({
+     filename:"/silam-emlak-admin-messages.html",
+     template:"./src/views/panel/views/messages.html"
+   }),
   new NodePolyfillPlugin()
 ],
 };

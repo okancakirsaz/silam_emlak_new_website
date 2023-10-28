@@ -7,7 +7,7 @@ body{
 
 #mapView{
     width: 50%;
-    height:700px ;
+    min-height:1080px;
     box-shadow: 2px 2px 10px 2px #3a3a3a9d;
 }
 }

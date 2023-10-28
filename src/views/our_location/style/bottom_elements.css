@@ -5,7 +5,8 @@
     body{
         background-image: url("../../../../assets/afyon_castle.jfif");
         background-repeat: no-repeat;
-        background-position:right;
+        background-position:top right;
+        background-size: 80% 1080px;
         display: flex;
         justify-content: space-between;
     }
